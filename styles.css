@@ -94,4 +94,46 @@ ul {
 li {
     margin-bottom: 8px;
     color: #555;
+}
+
+.definition {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    .visualization-container {
+        order: 1;
+    }
+    
+    .info-panel {
+        order: 2;
+    }
+
+    canvas {
+        height: 400px;
+    }
+
+    .topology-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    canvas {
+        height: 300px;
+    }
 } 
