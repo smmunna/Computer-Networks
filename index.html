@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Topology Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Network Topology Visualizer</h1>
+            <nav>
+                <button class="topology-btn active" data-topology="bus">Bus</button>
+                <button class="topology-btn" data-topology="ring">Ring</button>
+                <button class="topology-btn" data-topology="star">Star</button>
+                <button class="topology-btn" data-topology="mesh">Mesh</button>
+                <button class="topology-btn" data-topology="tree">Tree</button>
+                <button class="topology-btn" data-topology="hybrid">Hybrid</button>
+            </nav>
+        </header>
+
+        <main>
+            <div class="visualization-container">
+                <canvas id="topologyCanvas"></canvas>
+            </div>
+            
+            <div class="info-panel">
+                <h2 id="topologyTitle">Bus Topology</h2>
+                <div class="advantages">
+                    <h3>Advantages</h3>
+                    <ul id="advantagesList"></ul>
+                </div>
+                <div class="disadvantages">
+                    <h3>Disadvantages</h3>
+                    <ul id="disadvantagesList"></ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
